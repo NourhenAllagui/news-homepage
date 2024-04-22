@@ -215,13 +215,17 @@ color: var(--soft-red);
 }
 
 .c3 .bloc1 .bloc2 p {
-  width: 220px;
-  font-size: 14px;
+  width: auto;
+  font-size: 12px;
   text-align: justify;
 }
 
 @media only screen and (max-width: 580px) {
- .nav .links ul li a {
+ .nav .links ul {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+  .nav .links ul li a {
     display: none;
   }
 .nav .links ul .menuIconOpen {
@@ -239,7 +243,7 @@ color: var(--soft-red);
 }
 .content1 .c1 img {
   height: auto;
-  padding: 5px;
+  padding: 0;
 }
 .content1 .c1 .cText {
    height: auto;
@@ -256,7 +260,7 @@ color: var(--soft-red);
 
 
 .content1 .c2 {
-    width: 90%;
+    width: auto;
     height: auto;
     padding: 15px;
     margin: 0px 10px 0 10px;
